@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pour Toi 💗</title>
+  <title>Pour Toi 🌸</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(to bottom right, #fff0f6, #fce4ec);
-      font-family: 'Georgia', serif;
+      margin: 0;
+      background: linear-gradient(135deg, #fff0f6, #e0f7fa);
+      font-family: 'Quicksand', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -15,50 +17,81 @@
       min-height: 100vh;
       text-align: center;
       color: #5c2a47;
-      padding: 2em;
+      overflow: hidden;
+      padding: 2rem;
     }
 
     h1 {
+      font-family: 'Pacifico', cursive;
       font-size: 3em;
+      color: #c2185b;
       margin-bottom: 0.5em;
-      animation: fadeIn 2s ease-in-out;
+      animation: fadeInDown 1.5s ease-out;
     }
 
     p {
-      font-size: 1.3em;
+      font-size: 1.4em;
       line-height: 1.8;
       max-width: 700px;
-      animation: fadeIn 3s ease-in-out;
+      animation: fadeIn 3s ease-out;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 1rem 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(92, 42, 71, 0.1);
     }
 
-    .heart {
-      font-size: 3em;
-      margin-top: 1em;
-      animation: pulse 2s infinite;
+    .emoji {
+      font-size: 3rem;
+      animation: pulse 2.5s infinite ease-in-out;
+      margin-bottom: 1rem;
     }
 
     @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(10px); }
-      100% { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     @keyframes pulse {
       0%, 100% { transform: scale(1); }
       50% { transform: scale(1.2); }
     }
+
+    .flower {
+      position: absolute;
+      font-size: 1.5rem;
+      animation: float 8s infinite linear;
+      opacity: 0.7;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-120vh); }
+    }
   </style>
 </head>
 <body>
-  <div class="heart">💗</div>
+  <div class="emoji">💗</div>
   <h1>Je t’aime tellement</h1>
   <p>
     Bonjour mon cœur,<br>
     j’espère que ton petit monde s’est réveillé en paix ce matin.<br><br>
     Je t’ai préparé ce petit mot pour te rappeler à quel point tu comptes,<br>
     combien tu rends les jours plus jolis rien qu’en existant.<br><br>
-    Ce n’est pas un jour comme les autres : c’est un jour avec toi dedans —<br>
+    Ce n’est pas un jour comme les autres : c’est un jour avec toi dedans <br>
     et ça suffit pour que le ciel soit plus tendre.  
   </p>
-  <div class="heart">🌸</div>
+  <div class="emoji">🌸</div>
+
+  <!-- Petites fleurs qui flottent -->
+  <div class="flower" style="left: 10%;">🌸</div>
+  <div class="flower" style="left: 30%; animation-delay: 1s;">🌼</div>
+  <div class="flower" style="left: 50%; animation-delay: 2s;">🌺</div>
+  <div class="flower" style="left: 70%; animation-delay: 3s;">🌻</div>
+  <div class="flower" style="left: 90%; animation-delay: 4s;">🌷</div>
 </body>
 </html>
