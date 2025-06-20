@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pour Toi 💗</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #fff0f6, #fce4ec);
+      font-family: 'Georgia', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      color: #5c2a47;
+      padding: 2em;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      max-width: 700px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .heart {
+      font-size: 3em;
+      margin-top: 1em;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <div class="heart">💗</div>
+  <h1>Je t’aime tellement</h1>
+  <p>
+    Bonjour mon cœur,<br>
+    j’espère que ton petit monde s’est réveillé en paix ce matin.<br><br>
+    Je t’ai préparé ce petit mot pour te rappeler à quel point tu comptes,<br>
+    combien tu rends les jours plus jolis rien qu’en existant.<br><br>
+    Ce n’est pas un jour comme les autres : c’est un jour avec toi dedans —<br>
+    et ça suffit pour que le ciel soit plus tendre.  
+  </p>
+  <div class="heart">🌸</div>
+</body>
+</html>
